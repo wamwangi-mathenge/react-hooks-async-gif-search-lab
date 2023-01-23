@@ -11,7 +11,7 @@ function GifSearch({fetchData}) {
 
     function handleSubmit(event) {
         event.preventDefault()
-        fetchData(searchTerm)
+        fetchData(search)
     }
 
 
