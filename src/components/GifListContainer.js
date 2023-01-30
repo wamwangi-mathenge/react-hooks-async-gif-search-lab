@@ -48,7 +48,7 @@ function GifListContainer() {
 
 
     function fetchData(searchTerm) {
-        fetch('https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=5iC7Am3nF5e7GET3mM1wpfWADt4RKKvb&rating=g')
+        fetch(`https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=5iC7Am3nF5e7GET3mM1wpfWADt4RKKvb&rating=g`)
         .then((response) => response.json())
         .then((results) => {
             gifSetter(results)
